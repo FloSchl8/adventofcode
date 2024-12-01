@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	file, err := os.ReadFile("./2024/day01/input.txt")
+	file, err := os.ReadFile("./input/2024/day01/input.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -46,8 +46,6 @@ func day01(input string) int {
 	for i := range len(ns) {
 		sum += int(math.Abs(float64(ms[i] - ns[i])))
 	}
-
-	fmt.Println("sum", sum)
 	return sum
 }
 
